@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
    
-    <!--Nomarlize CSS-->
-    <link rel="stylesheet" href="assets/css/normalize.css">
     <!--Goggle Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
     <!--Font Awesome Icons-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!--Personalized CSS-->
     <link rel="stylesheet" href="assets/css/main.css">
-     <!--Full Story
-     <script>
+    <!--Full Story-->
+    <script>
         window['_fs_debug'] = false;
         window['_fs_host'] = 'fullstory.com';
         window['_fs_org'] = 'EGT49';
@@ -31,7 +30,7 @@
             g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
             g.clearUserCookie=function(){};
         })(window,document,window['_fs_namespace'],'script','user');
-    </script>-->
+    </script>
 
     <title>Afolabi Aiyeloja Portfolio</title>
 </head>
@@ -131,36 +130,8 @@
         <h3 class="section__subtitle">An array of works. 🔥🤷‍</h3>
         <div class="project__content">
             <li class="overlay project__item ">
-                <a class="overlay-effect--project open-modal " href="#pixabay" rel="modal:open"></a> 
+                <a class="overlay-effect--project" data-toggle="modal" data-target="#pixabay"></a> 
                 Pixabay Image Finder    
-            </li>
-            <li class="overlay project__item ">
-                <a  class="overlay-effect--project open-modal " href="#smart-brain" rel="modal:open"></a> 
-                Smart Brain Face Recognition   
-            </li>
-            <li class="overlay project__item ">
-                <a class="overlay-effect--project open-modal " href="#tetris" rel="modal:open"></a> 
-                Tetris  
-            </li>
-            <li class="overlay project__item ">
-                <a class="overlay-effect--project open-modal " href="#restaurant" rel="modal:open"></a> 
-                Item Catalog 
-            </li>
-            <li class="overlay project__item ">
-                <a class="overlay-effect--project open-modal " href="#neigberhood" rel="modal:open"></a> 
-                Neighberhood Map  
-            </li>
-            <li class="overlay project__item ">
-                <a class="overlay-effect--project open-modal " href="#shopify" rel="modal:open"></a> 
-                Shopify Plug  
-            </li>
-            <li class="overlay project__item ">
-                <a class="overlay-effect--project open-modal " href="#ex7" rel="modal:open"></a> 
-                PWA  
-            </li>
-            <li class="overlay project__item ">
-                <a class="overlay-effect--project open-modal " href="#ex8" rel="modal:open"></a> 
-                Burger Builder  
             </li>
         </div>      
     </section>
@@ -200,104 +171,29 @@
     </footer>
 
     <!-- MODALS -->
-    <div id="pixabay" class="modal">
-        <div class="modal__top">
-            <img class="modal__img" src="assets/img/pixabay.png" alt="">
-        </div>
-        <div class="modal__bottom">
-            <h4 class="modal__bottom--title">Pixabay Image Finder</h4>
-            <ul class="modal__bottom--subtitle">
-                <li>Application made for searching and filtering photos through Pixabay. </li>
-                <li>Utilized React & Material-UI for the frontend of the application. </li>
-                <li>The backend uses the Pixabay API for fetching photos and metadata. </li>
-            </ul>
-            <div class="modal__bottom--link">
-                <a class="" href=""> View Project</a>
-                <a class="" href=""> View Code</a>
+    <div id="pixabay" class="modal fade">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img class="img-fluid" src="assets/img/pixabay.png" alt="">
+            </div>
+            <div class="modal-body">
+                <h3 class="modal__title">Pixabay Image Finder</h3>
+                <ul class="modal__description">
+                    <li>Application made for searching and filtering photos through Pixabay. </li>
+                    <li>Utilized React & Material-UI for the frontend of the application. </li>
+                    <li>The backend uses the Pixabay API for fetching photos and metadata. </li>
+                    </ul>
+            </div>
+            <div class="modal-footer">
+                <a href="" target="blank" class="modal__links">Project</a>
+                <a href="" target="blank" class="modal__links">Code</a>
             </div>
         </div>
     </div>
-    <div id="smart-brain" class="modal">
-        <div class="modal__top">
-            <img class="modal__img" src="" alt="">
-        </div>
-        <div class="modal__bottom">
-            <h4 class="modal__bottom--title">Clarifai Facial Recognition</h4>
-            <ul class="modal__bottom--subtitle">
-                <li>Facial Recognition app for detecting faces in uploaded photos. </li>
-                <li>Built with React for the frontend of the application </li>
-                <li>The backend utilizes Express as the server and PostgresSQL as the database.  </li>
-            </ul>
-            <div class="modal__bottom--link">
-                <a class="" href=""> View Project</a>
-                <a class="" href=""> View Code</a>
-            </div>
-        </div>
     </div>
-    <div id="tetris" class="modal">
-        <div class="modal__top">
-            <img class="modal__img" src="assets/img/tetris.png" alt="">
-        </div>
-        <div class="modal__bottom">
-            <h4 class="modal__bottom--title">Pixabay Image Finder</h4>
-            <ul class="modal__bottom--subtitle">
-                <li>Single player Tetris game made with vanilla Javascript </li>
-                <li>The games utilizes the canvas and matrix implementations of Javascript. </li>
-                <li>Along with an updated score counter for tracking points. </li>
-            </ul>
-            <div class="modal__bottom--link">
-                <a class="" href=""> View Project</a>
-                <a class="" href=""> View Code</a>
-            </div>
-        </div>
-    </div>
-    <div id="restaurant" class="modal">
-        <div class="modal__top">
-            <img class="modal__img" src="assets/img/restaurant.png" alt="">
-        </div>
-        <div class="modal__bottom">
-            <h4 class="modal__bottom--title">Restaurant Catalog</h4>
-            <ul class="modal__bottom--subtitle">
-                <li>Application for viewing and editing fictional restaurants. </li>
-                <li>Utilizes Flask as the front and backend framework along with Oauth. </li>
-                <li>PostgresSQL is used for the database with an Apache server. </li>
-            </ul>
-            <div class="modal__bottom--link">
-                <a class="" href=""> View Project</a>
-                <a class="" href=""> View Code</a>
-            </div>
-        </div>
-    </div>
-    <div id="neigberhood" class="modal">
-        <div class="modal__top">
-            <img class="modal__img" src="assets/img/neighberhood.png" alt="">
-        </div>
-        <div class="modal__bottom">
-            <h4 class="modal__bottom--title">Pixabay Image Finder</h4>
-            <ul class="modal__bottom--subtitle">
-                <li>Application made for filtering locations on Google maps. </li>
-                <li>Utilized the Knouckout JS framework for the frontend. </li>
-                <li>The Google Maps and Foursquare API are used for fetching location data. </li>
-            </ul>
-            <div class="modal__bottom--link">
-                <a class="" href=""> View Project</a>
-                <a class="" href=""> View Code</a>
-            </div>
-        </div>
-    </div>
-    <div id="shopify" class="modal">
-        <div class="modal__top">
-            <img class="modal__img" src="assets/img/shopify.png" alt="">
-        </div>
-        <div class="modal__bottom">
-            <h2 class="modal__bottom--title">6</h2>
-            <ul class="modal__bottom--subtitle">
-                <li>Website built for my personal eCommerce agency to attract clients. </li>
-                <li>Utilizes Wordpress as the CMS and Woocommerce for processing payments. </li>
-                <li>Plugins such as W3 cache and Cloudflare are used for website optimization. </li>
-            </ul>
-        </div>
-    </div>
+
+
     
 
    
@@ -306,13 +202,13 @@
     <script 
         src="assets/js/jquery.js">
     </script>
-    <!--Animated Modal-->
+    <!--Anime.js-->
     <script 
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js">
-    </script>
-     <!--Anime.js-->
-     <script 
      type="text/javascript" src="assets/js/anime.min.js">
+    </script>
+    <!--Bootstrap JS-->
+    <script 
+     type="text/javascript" src="assets/js/bootstrap.min.js">
     </script>
     <!--App JS-->
     <script 
