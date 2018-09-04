@@ -58,8 +58,8 @@
 
     <!--ABOUT SECTION-->
     <section id="me" class="about section">
-        <h2 class="section__title">About Me</h2>
-        <h3 class="section__subtitle">Get to node me. 🙋‍</h3>
+        <h2 class="section__title">About</h2>
+        <h3 class="section__subtitle">Get to node me.</h3>
         <ul class="about__content">
             <li class=" overlay about__item about__item--1">
                 <a class="overlay-effect" target="blank" href="https://www.amazon.com/You-Dont-Know-Js-Book/dp/B01AY9P0P6"></a> 
@@ -127,19 +127,39 @@
     <!--PROJECT SECTION-->
     <section class="project section">
         <h2 class="section__title">Projects</h2>
-        <h3 class="section__subtitle">An array of works. 🔥🤷‍</h3>
-        <div class="project__content">
+        <h3 class="section__subtitle">An array of works.</h3>
+        <ul class="project__content">
             <li class="overlay project__item ">
                 <a class="overlay-effect--project" data-toggle="modal" data-target="#pixabay"></a> 
                 Pixabay Image Finder    
             </li>
-        </div>      
+            <li class="overlay project__item ">
+                <a class="overlay-effect--project" data-toggle="modal" data-target="#smart-brain"></a> 
+                Clarifai Face Recognition    
+            </li>
+            <li class="overlay project__item ">
+                <a class="overlay-effect--project" data-toggle="modal" data-target="#tetris"></a> 
+                Tetris   
+            </li>
+            <li class="overlay project__item ">
+                <a class="overlay-effect--project" data-toggle="modal" data-target="#restaurant"></a> 
+                Restaurant Catalog   
+            </li>
+            <li class="overlay project__item ">
+                <a class="overlay-effect--project" data-toggle="modal" data-target="#neighberhood"></a> 
+                Neighberhood Map    
+            </li>
+            <li class="overlay project__item ">
+                <a class="overlay-effect--project" data-toggle="modal" data-target="#shopify"></a> 
+                Shopify Plug    
+            </li>        
+        </ul>      
     </section>
 
-    <!--MUSIC SECTION-->
+    <!--DOBBY SECTION-->
     <section class="music section">
-        <h2 class="section__title">Music</h2>
-        <h3 class="section__subtitle">In my spare time I like to create waves.🌊🎼</h3>
+        <h2 class="section__title">Hobby</h2>
+        <h3 class="section__subtitle">In my spare time I enjoy making music with Ableton Live.</h3>
         <div class="music__content">
             <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/456362427&color=%23ced6e0&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
             </iframe>
@@ -149,15 +169,15 @@
     <!--CONTACT SECTION-->
     <section class="contact section">
         <h2 class="section__title">Contact</h2>
-        <h3 class="section__subtitle">Feel free to send a packet, preferabbly one with a offer. 😊</h3>
+        <h3 class="section__subtitle">Feel free to send a packet or view my resume. 😊</h3>
         <div class="contact__content">
             <div class="contact__content__body">
-                <h3 class="contact__title">View Resume</h3>
-                <button class="contact__btn" href="#me">Resume</button>
+                <h3 class="contact__content__title">View Resume</h3>
+                <a class="contact__btn"  href="https://docs.google.com/document/d/1DzwY1n-teeSbpvSayMUCwKvlEUKmdOw1LKdYEfxOD64/edit?usp=sharing" target="_blank"><i class="far fa-file-alt"></i> Resume</a>
             </div>
             <div class="contact__content__body contact__content__body--alt">
-                <h3 class="contact__title">Contact Us</h3>
-                <button class="contact__btn" href="">Contact</button>
+                <h3 class="contact__content__title">Contact</h3>
+                <a class="contact__btn" href="mailto:afolabi.aiyeloja@gmail.com" target="_blank"><i class="far fa-envelope"></i> Email</a>
             </div> 
             </div>
         </div>        
@@ -165,9 +185,9 @@
 
     <!--FOOTER SECTION-->
     <footer class="footer section">
-            <h3 class="footer__title">
-            by Afolabi Aiyeloja
-            </h3>      
+        <div class="footer__content">
+            <i class="fas fa-code fa-sm "></i> by Afolabi Aiyeloja 
+        </div>    
     </footer>
 
     <!-- MODALS -->
@@ -183,26 +203,127 @@
                     <li>Application made for searching and filtering photos through Pixabay. </li>
                     <li>Utilized React & Material-UI for the frontend of the application. </li>
                     <li>The backend uses the Pixabay API for fetching photos and metadata. </li>
-                    </ul>
+                </ul>
             </div>
             <div class="modal-footer">
-                <a href="" target="blank" class="modal__links">Project</a>
-                <a href="" target="blank" class="modal__links">Code</a>
+                <a href="" target="_blank" class="modal__links">Project</a>
+                <a href="" target="_blank" class="modal__links">Code</a>
             </div>
         </div>
     </div>
     </div>
-
-
-    
-
-   
+    <div id="smart-brain" class="modal fade">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img class="img-fluid" src="assets/img/pixabay.png" alt="">
+            </div>
+            <div class="modal-body">
+                <h3 class="modal__title">Clarifai Face Recognition</h3>
+                <ul class="modal__description">
+                    <li>Facial Recognition app for detecting faces in uploaded photos. </li>
+                    <li>Built with React for the frontend of the application </li>
+                    <li>The backend utilizes Express as the server and PostgresSQL as the database.  </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <a href="" target="_blank" class="modal__links">Project</a>
+                <a href="" target="_blank" class="modal__links">Code</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="tetris" class="modal fade">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img class="img-fluid" src="assets/img/tetris.png" alt="">
+            </div>
+            <div class="modal-body">
+                <h3 class="modal__title">Tetris Game</h3>
+                <ul class="modal__description">
+                    <li>Single player Tetris game made with vanilla Javascript </li>
+                    <li>The games utilizes the canvas and matrix implementations of Javascript. </li>
+                    <li>Along with an updated score counter for tracking points. </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <a href="" target="_blank" class="modal__links">Project</a>
+                <a href="" target="_blank" class="modal__links">Code</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="restaurant" class="modal fade">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img class="img-fluid" src="assets/img/restaurant.png" alt="">
+            </div>
+            <div class="modal-body">
+                <h3 class="modal__title">Restaurant Catalog</h3>
+                <ul class="modal__description">
+                    <li>Application for viewing and editing fictional restaurants. </li>
+                    <li>Utilizes Flask as the front and backend framework along with Oauth. </li>
+                    <li>PostgresSQL is used for the database with an Apache server. </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <a href="" target="_blank" class="modal__links">Project</a>
+                <a href="" target="_blank" class="modal__links">Code</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="neighberhood" class="modal fade">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img class="img-fluid" src="assets/img/neighberhood.png" alt="">
+            </div>
+            <div class="modal-body">
+                <h3 class="modal__title">Neighberhood Map</h3>
+                <ul class="modal__description">
+                    <li>Application made for filtering locations on Google maps. </li>
+                    <li>Utilized the Knouckout JS framework for the frontend. </li>
+                    <li>The Google Maps and Foursquare API are used for fetching location data. </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <a href="" target="_blank" class="modal__links">Project</a>
+                <a href="" target="_blank" class="modal__links">Code</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="shopify" class="modal fade">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img class="img-fluid" src="assets/img/shopify.png" alt="">
+            </div>
+            <div class="modal-body">
+                <h3 class="modal__title">Shopify Plug</h3>
+                <ul class="modal__description">
+                    <li>Website built for my personal eCommerce agency to attract clients. </li>
+                    <li>Utilizes Wordpress as the CMS and Woocommerce for processing payments. </li>
+                    <li>Plugins such as W3 cache and Cloudflare are used for website optimization. </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <a href="" target="_blank" class="modal__links">Project</a>
+                <a href="" target="_blank" class="modal__links">Code</a>
+            </div>
+        </div>
+    </div>
+    </div>
+        
 
     <!--jQuery-->
     <script 
         src="assets/js/jquery.js">
     </script>
-    <!--Anime.js-->
+    <!--Anime JS-->
     <script 
      type="text/javascript" src="assets/js/anime.min.js">
     </script>
