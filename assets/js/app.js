@@ -93,7 +93,6 @@ function submitForm(e){
   // Show alert
   document.querySelector('.alert').style.display = 'block';
  
-
   //Hide Alert
   const alertAnimation = anime({
     targets: '.alert',
