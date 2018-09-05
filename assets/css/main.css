@@ -660,6 +660,14 @@ h3, h4, p {
 .form {
   width: 50%; }
 
+.alert {
+  margin-top: 1rem;
+  padding: 10px;
+  font-size: 1.6rem;
+  border-radius: 3px;
+  background: #16a085;
+  display: none; }
+
 input {
   min-height: 4rem; }
 

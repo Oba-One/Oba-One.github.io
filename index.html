@@ -170,26 +170,28 @@
     <section class="contact section">
         <div class="contact__content">
             <h2 class="contact__title">Contact</h2>
-            <h3 class="contact__subtitle">Feel free to send a packet or view my resume. 😊</h3>
-            <form class="form" method="post" data-form-title="CONTACT US">
-                    <label for="validationTooltip01">Name</label>
+            <h3 class="contact__subtitle">Feel free to send a packet and view my resume. 😊</h3>
+            <form id="contactForm" class="form" method="post" data-form-title="CONTACT US">
                     <input type="hidden" data-form-email="true">
                 <div class="form-group">
-                    <input type="text" class="form-control form-control-lg" name="name" required placeholder="Name*" data-form-field="Name">
+                    <label for="validationTooltip01">Name</label>
+                    <input id="nameForm" type="text" class="form-control form-control-lg" name="name" required placeholder="Name*" data-form-field="Name">
                 </div>
                 <div class="form-group">
                     <label for="validationTooltip01">Email</label>
-                    <input type="email" class="form-control form-control-lg" name="email" required placeholder="Email*" data-form-field="Email">
+                    <input id="emailForm" type="email" class="form-control form-control-lg" name="email" required placeholder="Email*" data-form-field="Email">
                 </div>
                 <div class="form-group">
                     <label for="validationTooltip01">Message</label>
-                    <textarea class="form-control form-control-lg" name="message" required placeholder="Message" rows="7" data-form-field="Message"></textarea>
+                    <textarea id="messageForm" class="form-control form-control-lg" name="message"  placeholder="Message" rows="7" data-form-field="Message"></textarea>
                 </div>
                 <div class="contact__button__div">
-                <button type="submit" class="contact__btn">CONTACT</button>
-                <button type="submit" class="contact__btn">CONTACT</button>
+                <button type="button" class="contact__btn">Resume</button>
+                <button type="submit"  class="contact__btn">Send</button>
+              
                 </div>
             </form>
+            <div class="alert">Your message has been sent.</div>
         </div>       
     </section>
 
@@ -341,6 +343,9 @@
     <script 
      type="text/javascript" src="assets/js/bootstrap.min.js">
     </script>
+    <!--Firebase Script-->
+    <script 
+        src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
     <!--App JS-->
     <script 
         src="assets/js/app.js">

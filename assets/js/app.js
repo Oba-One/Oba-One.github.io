@@ -1,3 +1,4 @@
+// HEADER ANIMATION
 const headerAnimation = anime.timeline();
 
 headerAnimation
@@ -53,9 +54,72 @@ headerAnimation
     offset: 4000
 
   })
-  
-developerTitleAnimation 
 
+
+// Initialize Firebase
+const config = {
+  apiKey: "AIzaSyDWwZckwn5FEiSu5COZiwRSJdIENBACFaI",
+  authDomain: "afolabi-aiyeloja.firebaseapp.com",
+  databaseURL: "https://afolabi-aiyeloja.firebaseio.com",
+  projectId: "afolabi-aiyeloja",
+  storageBucket: "afolabi-aiyeloja.appspot.com",
+  messagingSenderId: "255631005341"
+};
+firebase.initializeApp(config);
+
+// Reference messge collection
+const messageRef = firebase.database().ref('messages');
+
+// Listen for form submit
+document.getElementById('contactForm').addEventListener('submit', submitForm);
+
+// Get values from form
+function getInputVal(id){
+  return document.getElementById(id).value;
+}
+
+// Submit form
+function submitForm(e){
+  e.preventDefault(); 
+  
+  // Save values as constants
+  const name = getInputVal('nameForm');
+  const email = getInputVal('emailForm');
+  const message = getInputVal('messageForm');
+
+  // Save message
+  saveMessage(name, email, message);
+
+  // Show alert
+  document.querySelector('.alert').style.display = 'block';
+ 
+
+  //Hide Alert
+  const alertAnimation = anime({
+    targets: '.alert',
+    opacity: [{value: 100}, {value: 0}],
+    duration: 2000,
+    easing: 'easeOutSine' 
+  });
+
+  setTimeout(function(){
+    document.querySelector('.alert').style.display = 'none';
+  }, 3005)
+
+  // Reset Form
+  document.getElementById('contactForm').reset();
+}
+
+
+// Save message to firebase database
+function saveMessage(name, email, message){
+  const newMessageRef = messageRef.push();
+  newMessageRef.set({
+    name: name,
+    email: email,
+    message: message
+  });
+}
 
  
 
