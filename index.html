@@ -168,19 +168,29 @@
 
     <!--CONTACT SECTION-->
     <section class="contact section">
-        <h2 class="section__title">Contact</h2>
-        <h3 class="section__subtitle">Feel free to send a packet or view my resume. 😊</h3>
         <div class="contact__content">
-            <div class="contact__content__body">
-                <h3 class="contact__content__title">View Resume</h3>
-                <a class="contact__btn"  href="https://docs.google.com/document/d/1DzwY1n-teeSbpvSayMUCwKvlEUKmdOw1LKdYEfxOD64/edit?usp=sharing" target="_blank"><i class="far fa-file-alt"></i> Resume</a>
-            </div>
-            <div class="contact__content__body contact__content__body--alt">
-                <h3 class="contact__content__title">Contact</h3>
-                <a class="contact__btn" href="mailto:afolabi.aiyeloja@gmail.com" target="_blank"><i class="far fa-envelope"></i> Email</a>
-            </div> 
-            </div>
-        </div>        
+            <h2 class="contact__title">Contact</h2>
+            <h3 class="contact__subtitle">Feel free to send a packet or view my resume. 😊</h3>
+            <form class="form" method="post" data-form-title="CONTACT US">
+                    <label for="validationTooltip01">Name</label>
+                    <input type="hidden" data-form-email="true">
+                <div class="form-group">
+                    <input type="text" class="form-control form-control-lg" name="name" required placeholder="Name*" data-form-field="Name">
+                </div>
+                <div class="form-group">
+                    <label for="validationTooltip01">Email</label>
+                    <input type="email" class="form-control form-control-lg" name="email" required placeholder="Email*" data-form-field="Email">
+                </div>
+                <div class="form-group">
+                    <label for="validationTooltip01">Message</label>
+                    <textarea class="form-control form-control-lg" name="message" required placeholder="Message" rows="7" data-form-field="Message"></textarea>
+                </div>
+                <div class="contact__button__div">
+                <button type="submit" class="contact__btn">CONTACT</button>
+                <button type="submit" class="contact__btn">CONTACT</button>
+                </div>
+            </form>
+        </div>       
     </section>
 
     <!--FOOTER SECTION-->
